@@ -1,0 +1,5 @@
+[package]
+name = "rustvent"
+version = "0.1.0"
+authors = ["ariesfluctus <ariesfluctus@protonmail.com>"]
+edition = "2018"
