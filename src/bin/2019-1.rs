@@ -12,21 +12,9 @@ fn main() {
         a + fuel
     });
 
-    // let mut new_fuel = calculate_fuel(fuel);
-    // while new_fuel > 0.0 {
-    //     eprintln!("current fuel: {}, new fuel: {}", fuel, new_fuel);
-    //     fuel += new_fuel;
-    //     new_fuel = calculate_fuel(new_fuel);
-    // }
-
     println!("{}", fuel);
 }
 
 fn calculate_fuel(mass: f64) -> f64 {
-    let result = (mass / 3.0).floor() - 2.0;
-    if result < 0.0 {
-        0.0
-    } else {
-        result
-    }
+    (mass / 3.0).floor() - 2.0
 }
